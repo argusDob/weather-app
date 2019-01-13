@@ -1,31 +1,26 @@
+* {
 
-*{
-	
 	margin: 1%;
 	padding: %;
 	box-sizing: border-box;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-.body{
-	
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+.body {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	background-color: ;
 }
 
 
-.row{
-	
-	max-width: 1140px;
+.row {
+max-width: 1140px;
 	margin: 0 auto;
-
-	
 }
 
 
 
 .header {
-	background-color:;
+	background-color: ;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -38,53 +33,54 @@
 
 }
 
-.
-.title {
+. .title {
 	font-size: 300px;
 }
 
- /* THE MAINCONTAINER HOLDS EVERYTHING */
- .maincontainer {
- 	display: flex;
- 	flex-direction: row;
- 	flex-wrap: wrap;
-justify-content: space-between;
-	  	background: #3C5377;
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background: #3C5377;
 
- }
+}
 
- /* THE CARD HOLDS THE FRONT AND BACK FACES */
- .thecard {
+.thecard {
 
- 	width: 250px;
- 	height: 320px;
-	border: 1px ;
- 	border-radius: 10px;
- 	transform-style: preserve-3d;
- 	transition: all 0.8s ease;
- 	align-items: center;
-	 background: #ffc728;
-	 color:white;
- }
+	width: 250px;
+	height: 320px;
+	border: 1px;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: all 0.8s ease;
+	align-items: center;
+	background: #ffc728;
+	font-weight: bold;
+
+	color: white;
+}
+
 .book_cover {
 	width: 260px;
-    border: 1px solid;
-    height: 321px;
-    border-radius: 10px;
+	border: 1px solid;
+	height: 321px;
+	border-radius: 10px;
 	box-shadow: 4px 5px darkblue;
 
 }
 
 .thefront {
-	 position: absolute;
-    bottom: 12px;
-    left: 62px;
+	position: absolute;
+	bottom: 12px;
+	left: 62px;
 	line-height: 4;
 	text-align: center;
 }
 
 .conditions {
 	white-space: nowrap;
-	background-color:rgba(200,0,0,0.1);
+	background-color: rgba(200, 0, 0, 0.6);
 	width: 110%;
 }

@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Weather Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <div id="app">
+	<div id="app">
 
-	<div class="header row">
-
+		<div class="header row">
 			<div class="img">
 				<img src="319807aa-db1a-4fc1-bb09-99fc69229ccc.png" alt="Italian Trulli">
 			</div>
-       	    <div class="title">
-        	<input type="text" v-model="message" placeholder="Search City">
-
-        	 
-				
+			<div class="title">
+				<input type="text" v-model="message" placeholder="Search City">
+			</div>
 		</div>
-		
-		</div>
-<div class="maincontainer row">
-         	 <div v-for="(value, index) in city" class="thecard">
-                 <img v-bind:src="image[index].largeImageURL" class="book_cover row">
-                   <div  class="thefront">
- 					<p>{{value.name.toUpperCase()}}</p>
+		<div class="maincontainer row">
+			<div v-for="(value, index) in filterCities" class="thecard">
+				<img v-bind:src="image[index].largeImageURL" class="book_cover row">
+				<div class="thefront">
+					<p>{{value.name.toUpperCase()}}</p>
 					<div class="conditions">
-					{{ value.weather[0].description.toUpperCase()}}
-					</div> 
-					<p>{{ value.main.temp}}</p> 
-			      
-				      <img v-bind:src="'http://openweathermap.org/img/w/' + newArray[index] + '.png' "  />	
-				     
-				 </div>
+						{{ value.weather[0].description.toUpperCase()}}
+					</div>
+					<p>{{ value.main.temp}}</p>
+					<div class="conditions">
+						<img v-bind:src="'http://openweathermap.org/img/w/' + newArray[index] + '.png' " />
+					</div>
+				</div>
 			</div>
-			</div>
-
 		</div>
-		
-		
-<!--
-		
-
-		 <div v-for="item in newArray" :key="item.id" class="thecard">
-         				      <img v-bind:src="'http://openweathermap.org/img/w/' + item + '.png' "  />	
-					   </div>
-                
 	</div>
--->
-
-<!--			</div>-->
-
-
-		
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="main.js"></script>
+	<script src="main.js"></script>
 </body>
+
 </html>
